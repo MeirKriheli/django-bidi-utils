@@ -1,0 +1,2 @@
+Some context processors and utils for easy handling for BIDI settings
+in django templates.
