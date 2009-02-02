@@ -74,4 +74,5 @@ TEMPLATE_DIRS = (
 INSTALLED_APPS = (
     'django.contrib.contenttypes',
     'django.contrib.sessions',
+    'bidiutils',
 )
