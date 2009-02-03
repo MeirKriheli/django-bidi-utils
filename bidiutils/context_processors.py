@@ -12,7 +12,6 @@ def bidi(request):
     """
 
     from django.utils import translation
-
     if translation.get_language_bidi():
         extra_context = {
             'LANGUAGE_DIRECTION':'rtl',
