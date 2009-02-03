@@ -22,8 +22,8 @@ class ContextTest(TestCase):
             'LANGUAGE_END': 'right',
             'LANGUAGE_START': 'left',
             'LANGUAGE_DIRECTION': 'ltr',
+            'LANGUAGE_MARKER': '&lrm;',
         })
-
 
     def test_rtl(self):
         """Test for right-to-left languages"""
@@ -34,4 +34,5 @@ class ContextTest(TestCase):
             'LANGUAGE_END': 'left',
             'LANGUAGE_START': 'right',
             'LANGUAGE_DIRECTION': 'rtl',
+            'LANGUAGE_MARKER': '&rlm;',
         })
