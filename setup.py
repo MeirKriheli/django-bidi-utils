@@ -8,9 +8,9 @@ setup(
     name = "django-bidi-utils",
     version = "0.1",
     url = 'http://github.com/mksoft/django-bidi-utils',
-    license = 'BSD',
+    license = 'MIT',
     description = "context processors and helpers for BIDI in django templates",
-    long_description = read('README'),
+    long_description = read('README.rst'),
 
     author = 'Meir Kriheli',
     author_email = 'meir@mksoft.co.il',
