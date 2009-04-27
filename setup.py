@@ -10,7 +10,7 @@ setup(
     url = 'http://github.com/mksoft/django-bidi-utils',
     license = 'MIT',
     description = "context processors and helpers for BIDI in django templates",
-    long_description = read('README.rst'),
+    long_description = read('README'),
 
     author = 'Meir Kriheli',
     author_email = 'meir@mksoft.co.il',
