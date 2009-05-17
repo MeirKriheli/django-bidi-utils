@@ -6,7 +6,7 @@ def read(fname):
 
 setup(
     name = "django-bidi-utils",
-    version = "0.2",
+    version = "0.2.1",
     url = 'http://github.com/mksoft/django-bidi-utils',
     license = 'MIT',
     description = "context processors and helpers for BIDI in django templates",
