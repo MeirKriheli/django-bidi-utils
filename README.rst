@@ -6,7 +6,7 @@ of `Bi-directional`_ (BiDi) in django templates.
 
 .. _Bi-directional: http://en.wikipedia.org/wiki/Bi-directional_text
 
-Add it to `TEMPLATE_CONTEXT_PROCESORS`_ in your project's settings.py. e.g::
+Add it to `TEMPLATE_CONTEXT_PROCESSORS`_ in your project's settings.py. e.g::
 
   ("django.core.context_processors.auth",
    "django.core.context_processors.debug",
@@ -23,7 +23,7 @@ The context processor defines the following template variables:
 * `LANGUAGE_END` -- End of language layout (`left` for RTL, `right` for LTR)
 * `LANGUAGE_MARKER` -- Language marker entity (`&rlm;` for RTL, `&lrm;` for LTR)
 
-In this doucment:
+In this document:
 
 RTL
     Right-to-Left written language (e.g: Hebrew, Arabic)
