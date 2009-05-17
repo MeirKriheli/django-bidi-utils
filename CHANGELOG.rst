@@ -1,6 +1,11 @@
 Changelog
 =========
 
+0.2.1
+-----
+
+* Forgot CHANGELOG.rst in MANIFEST.in
+
 0.2
 ---
 
