@@ -6,17 +6,18 @@ def read(fname):
 
 setup(
     name = "django-bidi-utils",
-    version = "0.1",
+    version = "0.2",
     url = 'http://github.com/mksoft/django-bidi-utils',
     license = 'MIT',
     description = "context processors and helpers for BIDI in django templates",
-    long_description = read('README'),
+    long_description = read('README.rst') + read('CHANGELOG.rst'),
 
     author = 'Meir Kriheli',
     author_email = 'meir@mksoft.co.il',
 
     packages = find_packages('src'),
     package_dir = {'': 'src'},
+    include_package_data = True,
 
     install_requires = ['setuptools'],
 

@@ -20,8 +20,7 @@ def add_direction(value, arg=u"rtl_only"):
 
     {{image_name|add_direction}} when image_name is 'start_arrow.png'
     results in 'start_arrow_rtl.png' in case of RTL language, and
-    'start_arrow.png' or 'start_arrow_ltr.png' depends on `rtl_only`
-    values.
+    'start_arrow.png' or 'start_arrow_ltr.png' depends on `arg` value.
 
     """
 
