@@ -15,13 +15,13 @@ History
 
 * Forgot CHANGELOG.rst in MANIFEST.in.
 
-0.2
----
+0.2 (2009-05-17)
+--------------------
 
 * Added template filter `add_direction`.
 * Removed `README`, add MAINFEST.in which includes `README.rst`.
 
-0.1
----
+0.1 (2009-04-28)
+--------------------
 
 * Initial release, context processors.

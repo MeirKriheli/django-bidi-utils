@@ -28,7 +28,7 @@ Install django-bidi-utils::
 
 Then use it in a project::
 
-	import django-bidi-utils
+	import bidiutils
 
 Features
 --------
