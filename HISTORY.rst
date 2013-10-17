@@ -6,8 +6,8 @@ History
 1.0 (2013-10-15)
 ------------------
 
-* Python 3 Compatibility.
-* Remove buildout.
+* Testing for Python 3.3, 2.7 and 2.6 Compatibility.
+* Removed buildout.
 * Re-Based on Cookiecutter.
 
 0.2.1 (2009-05-18)
