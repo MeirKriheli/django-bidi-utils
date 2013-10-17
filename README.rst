@@ -4,7 +4,7 @@ django-bidi-utils
 
 .. image:: https://badge.fury.io/py/django-bidi-utils.png
     :target: http://badge.fury.io/py/django-bidi-utils
-    
+
 .. image:: https://travis-ci.org/MeirKriheli/django-bidi-utils.png?branch=master
         :target: https://travis-ci.org/MeirKriheli/django-bidi-utils
 
@@ -12,7 +12,11 @@ django-bidi-utils
         :target: https://crate.io/packages/django-bidi-utils?version=latest
 
 
-context processors and filters for handling Bi-directional (BiDi) in django templates
+Provides context processors and filters for handling `Bi-directional`_ (BiDi) in
+django templates.
+
+.. _Bi-directional: http://en.wikipedia.org/wiki/Bi-directional_text
+
 
 Documentation
 -------------
@@ -26,9 +30,32 @@ Install django-bidi-utils::
 
     pip install django-bidi-utils
 
-Then use it in a project::
+To use it in a Django project add `bidiutils` the project's `INSTALLED_APPS`_
+setting::
 
-	import bidiutils
+    INSTALLED_APPS = (
+        "django.contrib.auth",
+        "django.contrib.contenttypes",
+        "django.contrib.sites",
+        ...
+        "bidiutils",
+        ...
+    )
+
+To enable the context processor, add it to `TEMPLATE_CONTEXT_PROCESSORS`_
+settings::
+
+    TEMPLATE_CONTEXT_PROCESSORS = (
+        "django.core.context_processors.auth",
+        "django.core.context_processors.debug",
+        "django.core.context_processors.i18n",
+        "django.core.context_processors.media",
+        ...
+        "bidiutils.context_processors.bidi",
+    )
+
+.. _TEMPLATE_CONTEXT_PROCESSORS: http://docs.djangoproject.com/en/dev/ref/settings/#template-context-processors
+.. _INSTALLED_APPS: https://docs.djangoproject.com/en/dev/ref/settings/#std:setting-INSTALLED_APPS
 
 Features
 --------
