@@ -7,9 +7,9 @@ import sys
 import bidiutils
 
 try:
-    from setuptools import setup
+    from setuptools import setup, Command
 except ImportError:
-    from distutils.core import setup
+    from distutils.core import setup, Command
 
 version = bidiutils.__version__
 
@@ -23,6 +23,21 @@ if sys.argv[-1] == 'publish':
 readme = open('README.rst').read()
 history = open('HISTORY.rst').read().replace('.. :changelog:', '')
 
+
+class PyTest(Command):
+    user_options = []
+
+    def initialize_options(self):
+        pass
+
+    def finalize_options(self):
+        pass
+
+    def run(self):
+        import sys, subprocess
+        errno = subprocess.call([sys.executable, 'runtests.py'])
+        raise SystemExit(errno)
+
 setup(
     name='django-bidi-utils',
     version=version,
@@ -32,12 +47,13 @@ setup(
     author_email='mkriheli@gmail.com',
     url='https://github.com/MeirKriheli/django-bidi-utils',
     packages=[
-        'django-bidi-utils',
+        'bidiutils',
     ],
     include_package_data=True,
     install_requires=[
     ],
-    license="BSD",
+    cmdclass={'test': PyTest},
+    license="MIT",
     zip_safe=False,
     keywords='django-bidi-utils',
     classifiers=[
