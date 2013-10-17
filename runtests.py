@@ -19,6 +19,9 @@ try:
             "django.contrib.sites",
             "bidiutils",
         ],
+        TEMPLATE_CONTEXT_PROCESSORS=[
+            'bidiutils.context_processors.bidi',
+        ],
         SITE_ID=1,
         NOSE_ARGS=['-s'],
     )
