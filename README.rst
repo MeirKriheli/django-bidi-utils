@@ -13,9 +13,12 @@ django-bidi-utils
 
 
 Provides context processors and filters for handling `Bi-directional`_ (BiDi) in
-django templates.
+django templates, adding some needed functionality to Django's LANGUAGE_BIDI_
+template var.
+
 
 .. _Bi-directional: http://en.wikipedia.org/wiki/Bi-directional_text
+.. _LANGUAGE_BIDI: https://docs.djangoproject.com/en/dev/topics/i18n/translation/#other-tags
 
 
 Documentation
@@ -60,4 +63,7 @@ settings::
 Features
 --------
 
-* TODO
+* Context processor adding to templates passed a RequestContext BiDi releated
+  variables.
+* `add_direction` template filter, for adding direction to media resource
+  (images, stylesheets, etc)
